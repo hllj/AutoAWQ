@@ -2,7 +2,7 @@ from awq import AutoAWQForCausalLM
 from transformers import AutoTokenizer, TextStreamer
 
 
-quant_path = "./mistral-instruct-v0.2-awq-marlin"
+quant_path = "hllj/mistral-instruct-v0.2-awq-marlin"
 
 # Load model
 model = AutoAWQForCausalLM.from_quantized(quant_path, fuse_layers=False)
